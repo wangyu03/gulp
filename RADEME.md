@@ -26,70 +26,74 @@
 -       输入gulp， 默认名为default的任务将会被运行
 
 #     一些用到的插件 ：-S 当前 或者 -D 添加到package.json
--       npm i -S或者-D del    清除=>插件 
--       npm i -S或者-D gulp-less  css编译=>插件 
--       npm i -S或者-D gulp-sass  css编译=>插件 
--       npm i -S或者-D gulp-scss  css编译=>插件 
--       npm i -S或者-D gulp-stylus  css编译=>插件 
--       编译文件自带的    需要require  path  
--       npm i -S或者-D gulp-htmlmin   html压缩=>插件 
--       npm i -S或者-D gulp-cssmin   css压缩=>插件
--       npm i -S或者-D gulp-rename   文件添加后缀=>插件
--       npm i -S或者-D gulp-concat   合并多个文件=>插件
--       npm i -S或者-D gulp-babel    把ES6 编译成 ES5 =>插件
--       npm i -S或者-D gulp-sourcemaps  还原源代码=>插件 
--       npm i -S或者-D gulp-uglify   js压缩=>插件
--       npm i -S或者-D gulp-eslint   检查js代码=>插件
--       npm i -S或者-D gulp-imagemin  压缩img=>插件
--       npm i -S或者-D imagemin-pngquant   压缩img的进阶=>插件
--       npm i -S或者-D gulp-plumber   阻止程序挂掉 => build 流程不会停止 =>插件
--       npm i -S或者-D gulp-connect   链接服务器 =>插件
--       npm i -S或者-D gulp.spritesmith  压缩image成雪碧图
+```
+       npm i -S或者-D del    清除=>插件 
+       npm i -S或者-D gulp-less  css编译=>插件 
+       npm i -S或者-D gulp-sass  css编译=>插件 
+       npm i -S或者-D gulp-scss  css编译=>插件 
+       npm i -S或者-D gulp-stylus  css编译=>插件 
+                        编译文件自带的    需要require  path  
+       npm i -S或者-D gulp-htmlmin   html压缩=>插件 
+       npm i -S或者-D gulp-cssmin   css压缩=>插件
+       npm i -S或者-D gulp-rename   文件添加后缀=>插件
+       npm i -S或者-D gulp-concat   合并多个文件=>插件
+       npm i -S或者-D gulp-babel    把ES6 编译成 ES5 =>插件
+       npm i -S或者-D gulp-sourcemaps  还原源代码=>插件 
+       npm i -S或者-D gulp-uglify   js压缩=>插件
+       npm i -S或者-D gulp-eslint   检查js代码=>插件
+       npm i -S或者-D gulp-imagemin  压缩img=>插件
+       npm i -S或者-D imagemin-pngquant   压缩img的进阶=>插件
+       npm i -S或者-D gulp-plumber   阻止程序挂掉 => build 流程不会停止 =>插件
+       npm i -S或者-D gulp-connect   链接服务器 =>插件
+       npm i -S或者-D gulp.spritesmith  压缩image成雪碧图
+```
 ##       eslint 插件如果有问题  需要些一个 eslint.json ，内容如下
--{
--    "rules": {
--        "eqeqeq": "off",
--        "curly": "warn",
--        "quotes": ["warn", "double"]
--    }
--}
-
+```
+{
+    "rules": {
+        "eqeqeq": "off",
+        "curly": "warn",
+        "quotes": ["warn", "double"]
+    }
+}
+```
 #     如果已经使用过的, 想在其他地方用 简单点就是复制 package.json 
 ##     把json文件放入项目文件夹  npm i 或者 cnpm i
--{
--  "dependencies": {
--    "babel-preset-es2015": "^6.24.1",
--    "eslint": "^4.3.0",
--    "gulp": "^3.9.1",
--    "gulp-less": "^3.3.2",
--    "gulp-sass": "^3.1.0",
--    "gulp-scss": "^1.4.0",
--    "gulp-stylus": "^2.6.0",
--    "gulp.spritesmith": "^6.5.1"
--  },
--  "devDependencies": {
--    "babel-preset-es2015": "^6.24.1",
--    "concat": "^1.0.3",
--    "del": "^3.0.0",
--    "eslint": "^4.3.0",
--    "gulp": "^3.9.1",
--    "gulp-babel": "^6.1.2",
--    "gulp-concat": "^2.6.1",
--    "gulp-connect": "^5.0.0",
--    "gulp-cssmin": "^0.2.0",
--    "gulp-eslint": "^4.0.0",
--    "gulp-htmlmin": "^3.0.0",
--    "gulp-imagemin": "^3.3.0",
--    "gulp-plumber": "^1.1.0",
--    "gulp-rename": "^1.2.2",
--    "gulp-sourcemaps": "^2.6.0",
--    "gulp-uglify": "^3.0.0",
--    "gulp.spritesmith": "^6.5.1",
--    "imagemin-pngquant": "^5.0.1",
--    "less-plugin-autoprefix": "^1.5.1"
--  }
--}
-
+```
+{
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.3.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.5.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "concat": "^1.0.3",
+    "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.5.1",
+    "imagemin-pngquant": "^5.0.1",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}
+```
 
 
 #     常用的指令：task, src ,watch, dest
@@ -102,10 +106,12 @@
 
 
 ##     gulp.src(globs,[options]):
--		gulp.src('client/templates/*.jade') 
--		  .pipe(jade()) 
--		  .pipe(minify())
--		  .pipe(gulp.dest('build/minified_templates'));
+```
+		gulp.src('client/templates/*.jade') 
+		  .pipe(jade()) 
+		  .pipe(minify())
+		  .pipe(gulp.dest('build/minified_templates'));
+```
 
 ###       globs: 类型： String 或 Array
 -		            所要读取的 glob 或者包含 globs 的数组。
@@ -122,27 +128,28 @@
 ###			options.base
 -			类型： String 默认值： 将会加在 glob 之前 (请看 glob2base)
 -			如, 请想像一下在一个路径为 client/js/somedir 的目录中，有一个文件叫 somefile.js ：
--
--			gulp.src('client/js/**/*.js') // 匹配 'client/js/somedir/somefile.js' 并且将 `base` 解析为 `client/js/`
--			  .pipe(minify())
--			  .pipe(gulp.dest('build'));  // 写入 'build/somedir/somefile.js'
--			
--			gulp.src('client/js/**/*.js', { base: 'client' })
--			  .pipe(minify())
--			  .pipe(gulp.dest('build'));  // 写入 'build/js/somedir/somefile.js'
-
+```
+			gulp.src('client/js/**/*.js') // 匹配 'client/js/somedir/somefile.js' 并且将 `base` 解析为 `client/js/`
+			  .pipe(minify())
+			  .pipe(gulp.dest('build'));  // 写入 'build/somedir/somefile.js'
+			
+			gulp.src('client/js/**/*.js', { base: 'client' })
+			  .pipe(minify())
+			  .pipe(gulp.dest('build'));  // 写入 'build/js/somedir/somefile.js'
+```
 
 
 
 ##     gulp.dest(path,[options]):
 -	            能被 pipe 进来，并且将会写文件。并且重新输出（emits）所有数据，
 -	            因此你可以将它 pipe 到多个文件夹。如果某文件夹不存在，将会自动创建它。
-
--		gulp.src('./client/templates/*.jade')
--  			.pipe(jade())
--  			.pipe(gulp.dest('./build/templates'))
--  			.pipe(minify())
--  			.pipe(gulp.dest('./build/minified_templates'));
+```
+		gulp.src('./client/templates/*.jade')
+  			.pipe(jade())
+  			.pipe(gulp.dest('./build/templates'))
+  			.pipe(minify())
+  			.pipe(gulp.dest('./build/minified_templates'));
+```
 ###       path : 类型： String or Function
 -            文件将被写入的路径（输出目录）。也可以传入一个函数，在函数中返回相应路径
 ###       options
